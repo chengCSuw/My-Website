@@ -1,0 +1,9 @@
+.link-indicator{
+    top:  96px;
+}
+
+.list-text{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 30px;
+}

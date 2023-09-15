@@ -1,0 +1,44 @@
+.quick-nav{
+    justify-content: center;
+}
+
+.about-me-label{
+    justify-content: center;
+}
+
+.link-indicator{
+    top:  4px;
+}
+
+.quick-nav{
+    justify-content: center;
+}
+
+.welcome{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 37px;
+    display: flex;
+    position: absolute;
+    top:94px;
+    left: 0px;
+    width: 100%;
+    height: 88vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-text{
+    display: grid;
+    justify-items: center;
+
+}
+
+.title{
+    font-size: 50px;
+}
+
+
+
+

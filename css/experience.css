@@ -1,0 +1,19 @@
+/*.skills .content{
+    text-align: center;
+}*/
+
+.link-indicator{
+    top:  188px;
+}
+
+.grid-item{
+    text-align: center;
+}
+
+.list-text{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 30px;
+    column-gap: 30px;
+    /*text-align: left;*/
+}

@@ -1,0 +1,64 @@
+.main2{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 45px;
+    line-height: 37px;
+    display: grid;
+    row-gap: 80px;
+    position: absolute;
+    top: 94px;
+    left: 0px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.contact{
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+    align-items: center;
+}
+
+.quick-nav{
+    justify-content: center;
+}
+
+.about-me-label{
+    justify-content: center;
+}
+
+.link-indicator{
+    top:  280px;
+}
+
+.copied-notification{
+    font-size: 20px; 
+    text-align: center;
+    color: #0fd931;
+    opacity: 0;
+}
+
+.email{
+    display: flex;
+    gap: 40px;
+    align-items: baseline;
+}
+
+.copy-button{
+    color: rgba(74, 77, 72, 0.94);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    transition-duration: 0.15s;
+    cursor: pointer;
+}
+
+.copy-button:hover{
+    color: #b0b0b0;
+}
+
+.copy-button:active{
+    transform: translate(0,3.5px);
+    text-shadow: none;
+}

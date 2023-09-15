@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="js/profile.js" async defer type="text/javascript"></script>
+        <script src="js/general.js"></script>
+        <script src="https://kit.fontawesome.com/9b2221f50c.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/contact.css">
+        <title>Contact</title>
+    </head>
+    
+    <body>
+        <div class="quick-nav">
+            <div class="about-me-label">
+                Chengjie Huang
+            </div>
+        </div>
+
+        <div class="show-menu" id="show-menu" onclick="openMenu()" style="left: 20px;">
+            <button class="show-button">
+                <i class="fa-solid fa-bars" style="transform: scale(2) translate(0px,0.5px); color: white;"></i>
+            </button>
+        </div>
+
+        <div class="menu" id="nav-menu">
+            <div class="menu-top">
+                <div class ="menu-logo">
+                    Menu 
+                </div>
+
+                <div class="hide-arrow" onclick="closeMenu()">
+                    <div class="white-arrow">
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                    </div>
+                    <i style="color:rgba(0, 0, 0, 0.25); display: block; position: absolute; top: 9px;" 
+                    class="fa-solid fa-arrow-left-long"></i>
+                </div>
+            </div>    
+             
+
+            <div class="nav-links">
+                <div class="link-indicator"></div>
+                <a href="intro_page.html" class="unselected">
+                    Introduction
+                </a>
+                <a href="story.html" class="unselected" style="z-index: 51;">
+                    My Story
+                </a>
+                <a href="experience.html" class="unselected">
+                    Education
+                </a>
+                <a class="selected">
+                    Contact Me
+                </a>
+                <a href="resume.html" class="unselected">
+                    Resume
+                </a>
+                <div class="link-shadow-bottom">                
+                </div> 
+                <div class="link-shadow">                
+                </div>
+            </div>
+        </div>
+
+        <div class="main2">
+            <div class="contact">            
+                <div>LinkIn</div>
+                <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="VERTICAL" data-vanity="chengjie-huang-70b3aa247" data-version="v1"><a style="font-size: 25px;" class="badge-base__link LI-simple-link" href="https://www.linkedin.com/in/chengjie-huang-70b3aa247?trk=profile-badge">Chengjie Huang</a></div>
+            </div>
+            <div class="contact">            
+                <div>Twitter</div>
+                <a class="twitter-timeline" data-width="300" data-height="400" data-theme="dark" href="https://twitter.com/Milkycow01?ref_src=twsrc%5Etfw">Tweets by Milkycow01</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
+            <div class="contact" style="align-items: flex-start;">            
+                <div>Email</div>
+                <div>
+                    <div class="email">
+                        <div style="font-size: 25px;">chengjietesting@outlook.com</div>
+                        <div class="copy-button"  onclick="copyEmail()">
+                            <i class="fa-solid fa-copy" style="font-size: 25px;"></i>
+                        </div>
+                    </div>
+                    <div class="copied-notification" id="copied-notification">
+                            <i class="fa-solid fa-check" style="margin-right: 6px;"></i>Email Copied</div>
+                </div>
+            </div>
+            <div style="height: 20px;"></div>
+            <div class="footer">
+            <p>&copy; 2023 Chengjie Huang</p>
+        </div>
+    </body>
+</html>    

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="js/general.js"></script>
+        <script src="general/IntersectionObs.js" defer></script>
+        <script src="https://kit.fontawesome.com/9b2221f50c.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/experience.css">
+        <title>Experiences</title>
+    </head>
+    
+    <body id="body" onload="changeTitle()">
+        
+        <div class="quick-nav">
+            <div class="about-me-label">
+                Chengjie Huang
+            </div>
+            <div  style="display:flex;">
+                <a  class="other-label" href="#early" >
+                    Early Education
+                </a>
+                <a class="other-label" href="#highschool">
+                    Highschool
+                </a>
+                <a class="other-label" href="#UW">
+                    University of Washington
+                </a>
+                <!-- <a class="other-label" style="padding:5px;" href="#work-ethic">
+                    Work Ethic
+                </a> -->
+                <a class="other-label" href="#skills">
+                    Skills
+                </a>
+            </div>
+        </div>
+
+        <div class="show-menu" id="show-menu" onclick="openMenu()">
+            <button class="show-button">
+                <i class="fa-solid fa-bars" style="transform: scale(2) translate(0px,0.5px); color: white;"></i>
+            </button>
+        </div>
+        <div class="menu" id="nav-menu">
+            <div class="menu-top">
+                <div class ="menu-logo">
+                    Menu 
+                </div>
+
+                <div class="hide-arrow" onclick="closeMenu()">
+                    <div class="white-arrow">
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                    </div>
+                    <i style="color:rgba(0, 0, 0, 0.25); display: block; position: absolute; top: 9px;" 
+                    class="fa-solid fa-arrow-left-long"></i>
+                </div>
+            </div>    
+        
+            <div class="nav-links">
+                <div class="link-indicator"></div>
+                <a href="intro_page.html" class="unselected">
+                    Introduction
+                </a>
+                <a href="story.html" class="unselected" style="z-index: 51;">
+                    My Story
+                </a>
+                <a class="selected">
+                    Education
+                </a>
+                <a href="contact.html" class="unselected">
+                    Contact Me
+                </a>
+                <a href="resume.html" class="unselected">
+                    Resume
+                </a>
+                <div class="link-shadow-bottom">                
+                </div> 
+                <div class="link-shadow">                
+                </div>
+            </div>
+        </div>
+        
+        <div class="image-background" id="image-background"></div>
+        
+        <div class="main-content">
+            <div id="early">
+                <div class="title" >
+                    Early Education
+                </div>
+                <div class="content" >
+                    <div class="text">
+                        <p>&nbsp; &nbsp; &nbsp; When I initially arrived in America, I was a soon-to-be 5th-grade student. At the beginning of the school year, I enrolled at Dunlap Elementary School. Later, once my English proficiency had improved, I was transferred to Martin Luther King Jr. Elementary School. After completing my elementary education, I transitioned to Aki Kurose Middle School. The ESL classes I attended there enhanced my English fluency, ultimately contributing to my improved performance in high school.</p>
+                        <p>&nbsp; &nbsp; &nbsp; The highlights of these few years included making a decent number of friends, performing well in school, and significantly improving my English skills. However, social anxiety made my last two years of middle school quite challenging.</p>
+                    </div>
+                    <div class="image-features" id ="image-features1">
+                        <button class="close-button" id="close-button1" onclick="pictureClose('image-features1')">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <img src="images/mePrincipal.JPG" id="picture1" class="picture" onclick="pictureZoom('image-features1')">
+                        <div class="picture-describtion" id="picture-describtion1" style="max-width: 400px;">
+                            <p style="margin-bottom: 0px;">This is me with the Aki Kurose middle school principal.</p>
+                            <p style="margin-top: 0px;">Source: taken by Mr.Branson, my 7th and 8th grade history teacher.</p>
+                        </div>
+                    </div>   
+                </div>
+            </div>
+
+            <div id="highschool">
+                <div class="title">
+                    Highschool
+                </div>
+                <div class="content">
+                    <div class="image-features" id ="image-features2">
+                        <button class="close-button" id="close-button2" onclick="pictureClose('image-features2')">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <img src="images/artclass.jpg" id="picture2" class="picture" onclick="pictureZoom('image-features2')">
+                        <div class="picture-describtion" id="picture-describtion2">
+                            <p style="margin-bottom: 0px;">This is me in the highschool art class.</p>
+                            <p style="margin-top: 0px;">Source: taken by me.</p>
+                        </div>
+                    </div> 
+                    <div class="text">
+                        <p>&nbsp; &nbsp; &nbsp; I attended Franklin High School for high school education, and those four years were quite enjoyable. I maintained decent grades and formed friendships along the way. In my sophomore year, I became a part of the University of Washington's (UW) Upward Bound program. Upward Bound proved to be an invaluable learning experience, primarily due to its UW summer academy. This academy prepared me for the college journey by offering college-level courses held at UW. Additionally, I regularly attended their office hours whenever they visited my school, seeking assistance with financial aid and the college application process, which significantly smoothened the application process for me.</p>
+                        <p>In my senior year, I became a member of the National Honor Society. While I volunteered at several of the organization's events, the most significant one for me was the homeless shelter donation campaign. I played a important role in organizing and promoting this event, providing me with my first real taste of leadership. I take pride in having contributed to improving the lives of disadvantaged individuals through this campaign.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="UW">
+                <div class="title">
+                    University of Washington
+                </div>
+                <div class="content">
+                    <div class="text">
+                        &nbsp; &nbsp; &nbsp;  I am currently a senior at the University of Washington, pursuing a degree in Computer Science with an expected graduation date in 2024. Over the past academic year, I worked as a web developer for the Sensor, Automation, and Energy Laboratory. In this role, I collaborated with a team of developers to both maintain and implement enhancements for websites associated with the Lab. My post-graduation goal is to secure a position as a software engineer or wireless engineer at a prominent company. For now, I am actively searching for internships and research opportunities to gain valuable real-world experience before I graduate.
+                    </div>
+                    <div class="image-features" id ="image-features3">
+                        <button class="close-button" id="close-button3" onclick="pictureClose('image-features3')">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <img src="images/dorm.jpg" id="picture3" class="picture" onclick="pictureZoom('image-features3')">
+                        <div class="picture-describtion" id="picture-describtion3">
+                            <p style="margin-bottom: 0px;">This is the area next to my dorm at UW.</p>
+                            <p style="margin-top: 0px;">Source: taken by me.</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+
+            <!---- <div id="work-ethic">
+                <div class="title">
+                    Work Ethic
+                </div>
+                <div class="content">
+                    <div class="text">
+                        &nbsp; &nbsp; &nbsp; Whether I am working or on vacation, I like to do things step by step. This means I would prefer to finish one task before starting the next, and when I am on a task, I will pay one hundred percent attention on finishing the task before putting priority on anything else. This can be shown when I am doing homework, where I would refuse to stop in the middle of a question before getting food or doing something else.  Not surprisingly, I prefer an organized and categorized work style. I think this type of work style is great because it allows me to identify and split a problem into smaller pieces rather than facing one big problem; making the problem seemingly easier to solve. For instance, using the homework example again, I would see the homework with many individual problems rather than one homework. This way of seeing the homework allows me to take little breaks after reaching multiple mini milestones, as opposed to taking one big break after reaching one big milestone.
+                    </div>
+                </div>
+            </div> -->
+
+            <div id="skills" class="skill">
+                <div class="title">
+                    Skills
+                </div>
+                <div class="content">
+                    <div class="list-text">
+                        <div class="grid-item">
+                            HTML & CSS
+                        </div>
+
+                        <div class="grid-item">
+                            Javascript
+                        </div>
+
+                        <div class="grid-item">
+                            Java
+                        </div>
+
+                        <div class="grid-item">
+                            C
+                        </div>
+
+                        <div class="grid-item">
+                            C++
+                        </div>
+
+                        <div class="grid-item">
+                            Assembly
+                        </div>
+
+                        <div class="grid-item">
+                            LaTeX
+                        </div>
+
+                        <div class="grid-item">
+                            WordPress
+                        </div>
+
+                        <div class="grid-item">
+                            Microsoft Softwares
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 10px;"></div>
+            <div class="footer">
+                <p>&copy; 2023 Chengjie Huang</p>
+            </div>
+        </div>
+    </body>
+</html>    

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="js/general.js"></script>
+        <script src="https://kit.fontawesome.com/9b2221f50c.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/intro_page.css">
+        <title>Introduction</title>
+    </head>
+    
+    <body>
+        <div class="quick-nav">
+            <div class="about-me-label">
+                Chengjie Huang
+            </div>
+        </div>
+
+        <div class="show-menu" id="show-menu" onclick="openMenu()">
+            <button class="show-button">
+                <i class="fa-solid fa-bars" style="transform: scale(2) translate(0px,0.5px); color: white;"></i>
+            </button>
+        </div>
+
+        <div class="menu" id="nav-menu">
+            <div class="menu-top">
+                <div class ="menu-logo">
+                    Menu 
+                </div>
+
+                <div class="hide-arrow" onclick="closeMenu()">
+                    <div class="white-arrow">
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                    </div>
+                    <i style="color:rgba(0, 0, 0, 0.25); display: block; position: absolute; top: 9px;" 
+                    class="fa-solid fa-arrow-left-long"></i>
+                </div>
+            </div>    
+             
+
+            <div class="nav-links">
+                <div class="link-indicator"></div>
+                <a  class="selected">
+                    Introduction
+                </a>
+                <a href="story.html" class="unselected" style="z-index: 51;">
+                    My Story
+                </a>
+                <a href="experience.html" class="unselected">
+                    Education
+                </a>
+                <a href="contact.html" class="unselected">
+                    Contact Me
+                </a>
+                <a href="resume.html" class="unselected">
+                    Resume
+                </a>
+                <div class="link-shadow-bottom">                
+                </div> 
+                <div class="link-shadow">                
+                </div>
+            </div>
+        </div>
+        
+        <div class="welcome">
+            <div class="intro-text">
+                <p class="title">Welcome to my website!</p>
+                <p style="width: 600px; font-size: 20px; text-align: center;"> My name is Cheng, I am currently a Computer Science student studying at the University of Washington.</p>
+                <p>Click the </p>
+                <button class="show-button-fake">
+                    <i class="fa-solid fa-bars" style="transform: scale(2) translate(0px,0.5px); color: white;"></i>
+                </button>
+                <p>button to open the navigation menu.</p>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy; 2023 Chengjie Huang</p>
+        </div>
+    </body>
+</html>    

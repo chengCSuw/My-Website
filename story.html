@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <script src="js/general.js"></script>
+        <script src="general/IntersectionObs.js" defer></script>
+        <script src="https://kit.fontawesome.com/9b2221f50c.js" crossorigin="anonymous"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/story.css">
+        <title>My Story</title>
+    </head>
+    
+    <body id="body" onload="changeTitle()">
+        
+        <div class="quick-nav">
+            <div class="about-me-label">
+                Chengjie Huang
+            </div>
+            <div  style="display:flex;">
+                <a  class="other-label" href="#beginning" >
+                    The Beginning
+                </a>
+                <a class="other-label" href="#the-move">
+                    The Move
+                </a>
+                <a class="other-label" style="padding:5px;" href="#recent-to-now">
+                    Recent Years to Now
+                </a>
+                <a class="other-label" href="#other-facts">
+                    Other Facts About Me
+                </a>
+            </div>
+        </div>
+
+        <div class="show-menu" id="show-menu" onclick="openMenu()">
+            <button class="show-button">
+                <i class="fa-solid fa-bars" style="transform: scale(2) translate(0px,0.5px); color: white;"></i>
+            </button>
+        </div>
+        <div class="menu" id="nav-menu">
+            <div class="menu-top">
+                <div class ="menu-logo">
+                    Menu 
+                </div>
+
+                <div class="hide-arrow" onclick="closeMenu()">
+                    <div class="white-arrow">
+                        <i class="fa-solid fa-arrow-left-long"></i>
+                    </div>
+                    <i style="color:rgba(0, 0, 0, 0.25); display: block; position: absolute; top: 9px;" 
+                    class="fa-solid fa-arrow-left-long"></i>
+                </div>
+            </div>    
+            
+           
+            <div class="nav-links">
+                <div class="link-indicator"></div>
+                <a href="intro_page.html" class="unselected">
+                    Introduction
+                </a>
+                <a  class="selected" style="z-index: 51;">
+                    My Story
+                </a>
+                <a href="experience.html" class="unselected">
+                    Education
+                </a>
+                <a href="contact.html" class="unselected">
+                    Contact
+                </a>
+                <a href="resume.html" class="unselected">
+                    Resume
+                </a>
+                <div class="link-shadow-bottom">                
+                </div> 
+                <div class="link-shadow">                
+                </div>
+            </div>
+        </div>
+        </div>
+        
+        <div class="image-background" id="image-background"></div>
+        
+        <div class="main-content">
+            <div id="beginning">
+                <div class="title" >
+                    The Beginning
+                </div>
+                <div class="content" >  
+                    <div class="text">
+                        &nbsp; &nbsp; &nbsp;  I was born in Guangzhou, China, on September 3, 2001, and spent my first 10 years of childhood there. Now, those years feel like a distant dream. The quality of life wasn't as high, but I cherish the simple joys - playing flash games on the computer, receiving new toys, and spirited games of hide and seek with my cousins. Despite the fun moments, I wasn't a stellar student, often getting into fights and missing homework deadlines. Yet, I don't share the desire of many to relive those years. School in Guangzhou was incredibly stressful, with immense pressure to achieve high grades, and teachers didn't hesitate to resort to physical punishment, taking a toll on my physical and mental well-being.
+                    </div> 
+                    <div class="image-features" id ="image-features1">
+                        <button class="close-button" id="close-button1" onclick="pictureClose('image-features1')">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <img src="images/me_young.jpg" id="picture1" class="picture" onclick="pictureZoom('image-features1')">
+                        <div class="picture-describtion" id="picture-describtion1">
+                            <p style="margin-bottom: 0px;">This is me around 5 years old.</p>
+                            <p style="margin-top: 0px;">Source: taken by mom.</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+
+            <div id="the-move">
+                <div class="title">
+                    The Move
+                </div>
+                <div class="content">
+                    <div class="image-features" id ="image-features2">
+                        <button class="close-button" id="close-button2" onclick="pictureClose('image-features2')">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <img src="images/mebuffet.jpg" id="picture2" class="picture" onclick="pictureZoom('image-features2')">
+                        <div class="picture-describtion" id="picture-describtion2">
+                            <p style="margin-bottom: 0px;">This is my second year living in Seattle.</p>
+                            <p style="margin-top: 0px;">Source: taken by mom.</p>
+                        </div>
+                    </div> 
+                    <div class="text">
+                        &nbsp; &nbsp; &nbsp; On June 15, 2012, I distinctly recall waking up early on a chilly morning, hauling my luggage as I prepared to leave my home for the last time. Alongside my parents, we embarked on a journey to the airport, destined for Seattle, Washington. Those initial years of my life in the U.S. are the best years of my life; I forged countless friendships, and the school workload was far from overwhelming. Life was relatively carefree, and I excelled academically while enjoy newfound freedoms. However, the era of carefree enjoyment abruptly concluded when I grappled with social anxiety in 7th grade, which rendered me fearful of group interactions and meeting new people. In hindsight, this anxiety was likely rooted in the language barrier that separated me from my peers. Though I've largely overcome it, the lasting impact of that experience still lingers within me.
+                    </div>
+                </div>
+            </div>
+
+            <div id="recent-to-now">
+                <div class="title">
+                    Recent Years to Now
+                </div>
+                <div class="content">
+                    <div class="text">
+                        &nbsp; &nbsp; &nbsp; In June 2020, I graduated from Franklin High School and started my studies at the University of Washington in September of the same year, where I was directly admitted to the computer science major. Currently, I am a senior-year student actively seeking opportunities for growth, including research lab positions and potential job opportunities.
+                    </div>
+                    <div class="image-features" id ="image-features3">
+                        <button class="close-button" id="close-button3" onclick="pictureClose('image-features3')">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <img src="images/grad2.png" id="picture3" class="picture" onclick="pictureZoom('image-features3')">
+                        <div class="picture-describtion" id="picture-describtion3">
+                            <p style="margin-bottom: 0px;">This is my graduation picture during COVID.</p>
+                            <p style="margin-top: 0px;">Source: taken by dad.</p>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+            
+
+            <div id="other-facts">
+                <div class="title">
+                    Other Facts About Me
+                </div>
+                <div class="content">
+                    <div class="list-text">
+                        <div>
+                            This seems kinda cliche, but here are some more facts about me.
+                        </div>
+
+                        <div>
+                            My favorite leisure activity is traveling. I'm not sure if this happens to you as well, but whenever I visit a new or distant place, my mind carves out a unique space for that experience, making it a lasting memory. 
+                        </div>
+
+                        <div>
+                            My favorite food is sashimi salmon. Eating salmon raw is just another experience, you get to taste the untouched flavor of the fat that can't be achieved when it is cooked and seasoned. 
+                        </div>
+
+                        <div>
+                            I stand at approximately 6 feet 3 inches, making me quite tall. It's a mystery why I reached this height, as both of my parents have rather average heights.
+                        </div>
+
+                        <div>
+                            My favorite band is CHVRCHES (pronounced "churches"). They are a Scottish trio known for their synth-pop music and have gained recognition for composing theme music for various triple-A video games. My top pick among their songs is "Playing Dead."
+                        </div>
+                        <div>
+                            I enjoy watching motorsport, specifically Formula E and Formula 1. Besides these two, I don't follow any other racing series because, personally, I find them rather uninteresting. However, I respect differing opinions.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 20px;"></div>
+            <div class="footer">
+                <p>&copy; 2023 Chengjie Huang</p>
+            </div>
+        </div>
+    </body>
+</html>    
